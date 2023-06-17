@@ -9,14 +9,16 @@
             "preLaunchTask": "echo",
             "args": [
                 "/C",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                //"${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\a.exe",
                 "&",
                 "echo.",
                 "&",
                 "pause"
             ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            //"cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole":true
         },
@@ -24,7 +26,8 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            //"program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}\\a.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

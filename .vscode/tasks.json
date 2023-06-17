@@ -9,10 +9,12 @@
             "command": "C:\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g", 
-                "${file}", 
+                //"${file}",
+                "*.c", 
                 "-o", 
-                "${fileBasenameNoExtension}.exe",
-                "-fexec-charset=GBK"//解决中文乱码
+                //"${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\a.exe"
+                //"-fexec-charset=GBK"//解决中文乱码
             ]
         }
     ],
