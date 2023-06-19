@@ -18,7 +18,10 @@ int main()
 {
     int x, y;
     printf("please input two positive integer:");
-    scanf("%d%d", &x, &y); 
+    scanf("%d%d", &x, &y);
+    if (x == 1){
+        x += 2;
+    } 
     if (x%2==0){
         x++;
     }
